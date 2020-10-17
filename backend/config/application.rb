@@ -1,0 +1,19 @@
+require "action_controller/railtie"
+
+class NanoAPI < Rails::Application
+  config.root = File.dirname(__dir__)
+  config.autoloader = :zeitwerk
+  if Rails.env.production?
+    config.eager_load = true 
+    config.cache_classes = true
+  else
+    config.eager_load = false
+  end
+  config.autoload_paths << File.dirname(__dir__) # autoload right from this folder
+  config.api_only = true # removes middleware we dont need
+  config.logger = Logger.new($stdout)
+  Rails.logger  = config.logger
+  config.secret_key_base = ENV["SECRET_KEY_BASE"] # Rails won't boot w/o a secret token for session, cookies, etc.
+end
+
+NanoAPI.initialize!
