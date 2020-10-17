@@ -7,5 +7,5 @@ communicating with a Rails API all in one repo. Also cool: it's a single Rack ap
 Ruby-friendly host or use a Docker mesh like Fly.io and get the whole enchilada up and running in no time flat!
 
 **LIVE DEMOS**:
-[https://rails-nano-api-test.fly.dev](https://rails-nano-api-test.fly.dev) ([Fly.io](https://fly.io))
-[https://rails-nano-demo.onrender.com/](https://rails-nano-demo.onrender.com/) ([Render](https://render.com))
+* [https://rails-nano-api-test.fly.dev](https://rails-nano-api-test.fly.dev) ([Fly.io](https://fly.io))
+* [https://rails-nano-demo.onrender.com/](https://rails-nano-demo.onrender.com/) ([Render](https://render.com))
