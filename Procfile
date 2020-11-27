@@ -1,0 +1,1 @@
+web: yarn deploy && bundle exec puma -p 8080
