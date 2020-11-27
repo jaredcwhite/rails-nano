@@ -1,13 +1,13 @@
-FROM ruby:2.6-alpine3.11 as builder
+FROM ruby:2.7.2-alpine3.11 as builder
 
-RUN apk add --no-cache --virtual \\
+RUN apk add --no-cache --virtual \
     #
     # required
-    nodejs-dev yarn bash \\
-    tzdata build-base libffi-dev \\
+    nodejs-dev yarn bash \
+    tzdata build-base libffi-dev \
     #
     # nice to haves
-    curl git \\
+    curl git \
     #
     # Fixes watch file isses with things like HMR
     libnotify-dev
