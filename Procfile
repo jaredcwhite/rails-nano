@@ -1,1 +1,2 @@
-web: yarn deploy && bundle exec puma -p 8080
+release: yarn deploy
+web: bundle exec puma -p 8080
