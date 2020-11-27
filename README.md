@@ -8,5 +8,5 @@ Ruby-friendly host or use a Docker mesh like Fly.io and get the whole enchilada 
 
 **LIVE DEMOS**:
 * [https://rails-nano-api-test.fly.dev](https://rails-nano-api-test.fly.dev) ([Fly.io](https://fly.io))
-* [https://rails-nano-demo.onrender.com/](https://rails-nano-demo.onrender.com/) ([Render](https://render.com))
-* Vercel + Heroku (coming soon)
+* [https://rails-nano-demo.onrender.com](https://rails-nano-demo.onrender.com) ([Render](https://render.com))
+* [https://rails-nano.vercel.app](https://rails-nano.vercel.app) ([Vercel](https://vercel.com) + [Heroku](https://www.heroku.com/)) (_Note: there may be a warmup delay at first due to the free Heroku dyno starting up_)
