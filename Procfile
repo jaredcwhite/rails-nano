@@ -1,1 +1,1 @@
-web: bundle exec puma -p 8080
+web: bundle exec puma -p ${PORT:-3000}
