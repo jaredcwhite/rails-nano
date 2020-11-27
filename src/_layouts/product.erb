@@ -16,25 +16,3 @@ layout: default
 <br/>
 
 <p>In case this isn't immediately clear, you're currently viewing a <em>statically-rendered</em> Bridgetown page which is <em>dynamically-updated</em> with fresh data via a backend Rails API which is <em>re-rendering</em> the content of the page via the Bridgetown gem loaded in the Rails controller. There is no Rails view layer at all. <code>ActionView</code> isn't even loaded. It's all the same Bridgetown templates, whether statically-generated or dynamically-rendered by Rails. 👀</p>
-
-<script>
-  async function refreshProduct(sleepTime) {
-    const response = await fetch('/backend<%= page.id %>?sleep_time=' + Math.min(sleepTime, 10));
-    const data = await response.text();
-    const template = document.createElement("template")
-    template.innerHTML = data
-
-    const contentNode = document.querySelector("main-content")
-    while (contentNode.firstChild && !contentNode.firstChild.remove());
-
-    contentNode.append(template.content.querySelector("main-content"))
-    document.querySelector("main").style.visibility = "visible"
-  }
-
-  document.querySelector("main").style.visibility = "hidden"
-  setTimeout(() => {
-    document.querySelector("main").style.visibility = "visible"
-  }, 1000) // in case the request takes too long...
-
-  refreshProduct(0)
-</script>

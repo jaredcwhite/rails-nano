@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ManifestPlugin = require("webpack-manifest-plugin");
 
@@ -20,6 +21,9 @@ module.exports = {
     extensions: [".js", ".jsx"],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      RAILS_API: JSON.stringify(process.env.RAILS_API || "")
+    }),
     new MiniCssExtractPlugin({
       filename: "../css/all.[contenthash].css",
     }),
