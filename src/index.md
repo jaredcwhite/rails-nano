@@ -4,8 +4,16 @@ layout: home
 
 Welcome to [Bridgetown + Rails Nano](https://github.com/jaredcwhite/rails-nano)!
 
-<button id="hello-rails" style="font-size: inherit;padding:10px;background:green;color:white;border:none; border-radius: 10px">Say Hello, Rails:</button>
+<button id="hello-rails">Say Hello, Rails:</button>
 
-<div id="rails-result" style="border: 1px dashed #ccc; background: white; padding: 20px">
+<rails-result class="box">
 &nbsp;
-</div>
+</rails-result>
+
+<br/>
+
+<h2>Check Out Our Nifty Products!</h2>
+
+{% for product in site.products %}
+<p><a href="{{ product.url }}">{{ product.title }}</a></p>
+{% endfor %}

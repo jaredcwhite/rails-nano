@@ -21,3 +21,7 @@ url: "" # the base hostname & protocol for your site, e.g. https://example.com
 permalink: pretty
 
 # timezone: America/Los_Angeles
+
+collections:
+  products:
+    output: true

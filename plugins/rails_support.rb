@@ -1,0 +1,1 @@
+Bridgetown::Site.attr_accessor :controller

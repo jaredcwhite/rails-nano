@@ -1,11 +1,9 @@
 ---
 layout: page
-title: About
+title: About “Rails Nano”
 permalink: /about/
 ---
 
-This is the basic Bridgetown site template. You can find out more info about customizing your Bridgetown site, as well as basic Bridgetown usage documentation at [bridgetownrb.com](https://bridgetownrb.com/)
+This is a demo of a static website powered by Bridgetown communicating with a Rails API all in one repo. It's a single Rack app stack served by Puma, so it's somethign you can easily deploy to a Ruby-friendly host or use a Docker mesh like Fly.io and get the whole enchilada up and running in no time flat!
 
-You can find the source code for Bridgetown at GitHub:
-[bridgetownrb](https://github.com/bridgetownrb) /
-[bridgetown](https://github.com/bridgetownrb/bridgetown)
+[Check out the source code on GitHub](https://github.com/jaredcwhite/rails-nano)

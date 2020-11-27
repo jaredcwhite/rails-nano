@@ -7,11 +7,37 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  color: darkgreen;
+}
+
 h1, nav, footer {
   text-align: center;
 }
 
 main {
-  margin: 4rem auto;
+  margin: 4rem auto 8rem;
   max-width: 60rem;
+}
+
+footer {
+  color: #777;
+  font-style: italic;
+}
+
+button {
+  font-size: inherit;
+  padding:10px;
+  background:green;
+  color:white;
+  border:none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+.box {
+  display: block;
+  border: 1px dashed #ccc;
+  background: white;
+  padding: 20px;
 }

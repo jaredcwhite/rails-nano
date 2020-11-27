@@ -1,0 +1,15 @@
+<p>Sku: <strong><%= product.data.sku %></strong></p>
+
+<p>Price:
+  <strong>
+    <% if controller %>
+      <%= controller.price %>
+    <% else %>
+      Contact Us for Price Details
+    <% end %>
+  </strong>
+</p>
+
+<product-description class="box">
+  <%== product.content %>
+</product-description>
