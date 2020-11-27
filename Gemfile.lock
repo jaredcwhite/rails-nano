@@ -144,6 +144,8 @@ GEM
     puma (5.0.4)
       nio4r (~> 2.0)
     rack (2.2.3)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.0.3.4)
@@ -207,7 +209,11 @@ DEPENDENCIES
   bridgetown (~> 0.18)
   phaedra
   puma
+  rack-cors
   rails
+
+RUBY VERSION
+   ruby 2.7.0p0
 
 BUNDLED WITH
    2.1.4
