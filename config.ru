@@ -5,7 +5,7 @@ require_relative "./backend/config/application"
 # separately from the static Bridgetown website.
 # unless ENV["RAILS_ENV"] == "production"
 
-unless ENV["ON_HEROKU"]
+unless ENV["ON_HEROKU"] || ENV["HEROKU_APP_NAME"]
   use Phaedra::Middleware::Static, root: "output", urls: %w[/]
   use Phaedra::Middleware::NotFound, "output/404.html"
 end
