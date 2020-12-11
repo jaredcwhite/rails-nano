@@ -11,10 +11,8 @@ layout: default
 <main-content>
   <%= render "product", controller: controller, product: product %>
 
-  <hr />
-
   <% if controller %>
-    <p>See Also: <%= controller.widget.name %></p>
+    <p>See Also: <strong><%= controller.widget.name %></strong></p>
   <% end %>
 </main-content>
 
