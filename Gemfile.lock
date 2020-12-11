@@ -137,6 +137,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
+    pg (1.2.3)
     phaedra (0.5.3)
       activesupport (~> 6.0)
       rack (~> 2.0)
@@ -207,6 +208,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 0.18)
+  pg
   phaedra
   puma
   rack-cors
