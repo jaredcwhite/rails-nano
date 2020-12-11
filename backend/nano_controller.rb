@@ -3,6 +3,7 @@ class NanoController < ActionController::Base
     render json: {
       status: "index route",
       hello: "Howdy! I'm Rails, your friendly neighborhood Ruby backend. :)", 
+      widget: Widget.first&.display_name,
       boot_time: Shared::Example.boot_time,
       current_time: Time.now
     }

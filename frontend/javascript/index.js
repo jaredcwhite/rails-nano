@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${response.data.hello}</p>
           <p>Booted at: ${response.data.boot_time}</p>
           <p>Current server time: ${response.data.current_time}</p>
+          <p>PostgreSQL sample: ${response.data.widget}</p>
         `
       })
     })
