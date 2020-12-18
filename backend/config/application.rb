@@ -1,4 +1,5 @@
 require "action_controller/railtie"
+require "action_mailer/railtie"
 
 class NanoAPI < Rails::Application
   config.root = File.dirname(__dir__) # set the root to `backend`
