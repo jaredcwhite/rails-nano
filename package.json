@@ -11,7 +11,7 @@
     "deploy": "yarn webpack-build && yarn build",
     "sync": "node sync.js",
     "start": "node start.js",
-    "puma": "bundle exec puma"
+    "nano": "ruby nano_start.rb --"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

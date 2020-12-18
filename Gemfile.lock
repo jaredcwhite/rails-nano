@@ -93,6 +93,8 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    css_parser (1.7.1)
+      addressable
     erubi (1.10.0)
     faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
@@ -105,6 +107,7 @@ GEM
       activesupport (>= 4.2.0)
     hash_with_dot_access (1.1.0)
       activesupport (>= 5.0.0, < 7.0)
+    htmlentities (4.3.4)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     kramdown (2.3.0)
@@ -140,6 +143,13 @@ GEM
     phaedra (0.5.3)
       activesupport (~> 6.0)
       rack (~> 2.0)
+    premailer (1.14.2)
+      addressable
+      css_parser (>= 1.6.0)
+      htmlentities (>= 4.0.0)
+    premailer-rails (1.11.1)
+      actionmailer (>= 3)
+      premailer (~> 1.7, >= 1.7.9)
     public_suffix (4.0.6)
     puma (5.0.4)
       nio4r (~> 2.0)
@@ -208,6 +218,7 @@ PLATFORMS
 DEPENDENCIES
   bridgetown (~> 0.18)
   phaedra
+  premailer-rails
   puma
   rack-cors
   rails
