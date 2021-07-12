@@ -9,9 +9,8 @@ const port = 4001
 /////////////////
 concurrently([
   { command: "yarn webpack-dev", name: "Webpack", prefixColor: "yellow"},
-  { command: "sleep 4; yarn watch", name: "Bridgetown", prefixColor: "green"},
-  { command: "sleep 8; yarn puma --port " + port, name: "Puma", prefixColor: "red"},
-  { command: "sleep 10; yarn sync", name: "Live", prefixColor: "blue"}
+  { command: "sleep 4; bundle exec rake nano:start -- --port=" + port, name: "Bridgetown", prefixColor: "green"},
+  { command: "sleep 8; yarn sync", name: "Live", prefixColor: "blue"}
 ], {
   restartTries: 3,
   killOthers: ['failure', 'success'],
