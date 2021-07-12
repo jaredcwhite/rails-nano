@@ -1,12 +1,19 @@
 ---
 layout: default
 ---
-<% product = page %>
+<%
+  product = page
+  controller = site.controller
+%>
 
 <h1><%= link_to product.data.title, product.url %></h1>
 
 <main-content>
-  <%= render "product", controller: site.controller, product: product %>
+  <%= render "product", controller: controller, product: product %>
+
+  <% if controller %>
+    <p>See Also: <strong><%= controller.widget.name %></strong></p>
+  <% end %>
 </main-content>
 
 <br/>

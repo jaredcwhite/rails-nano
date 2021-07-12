@@ -8,3 +8,7 @@ gem "rails"
 gem "rack-cors"
 gem "phaedra"
 gem "bridgetown", "~> 0.18"
+
+if ENV["RAILS_ENV"]
+  gem "pg"
+end
